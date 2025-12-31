@@ -2,50 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashish Tathagat | Instructional Designer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- Dark Mode Toggle -->
-<input type="checkbox" id="dark-toggle" />
-<label for="dark-toggle" class="dark-toggle">🌙</label>
-
 <!-- Navigation -->
-<nav class="nav">
+<header class="nav">
   <div class="nav-container">
     <span class="logo">Ashish Tathagat</span>
-    <div class="nav-links">
+    <nav class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<!-- Animated Background -->
-<div class="animated-bg">
-  <span></span><span></span><span></span><span></span><span></span>
-</div>
-
-<!-- Hero -->
-<header class="hero">
-  <div class="hero-content">
-    <h1>🎓 Instructional Designer</h1>
-    <p>
-      Designing learner-centered, engaging, and effective digital learning experiences.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#portfolio" class="btn-primary">📘 View Portfolio</a>
-      <a href="resume.pdf" download class="btn-secondary">📄 Download Resume</a>
-      <a href="mailto:Ashisht3297@gmail.com" class="btn-secondary">✉️ Email</a>
-    </div>
+      <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
   </div>
 </header>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>🎓 Instructional Designer</h1>
+  <p>
+    Designing learner-centered, engaging, and effective digital learning experiences.
+  </p>
+
+  <div class="hero-buttons">
+    <a href="#portfolio" class="btn primary">View Portfolio</a>
+    <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
+    <a href="mailto:Ashisht3297@gmail.com" class="btn secondary">Email Me</a>
+  </div>
+</section>
 
 <!-- About -->
 <section class="section" id="about">
@@ -56,8 +45,8 @@
       instructional design models, and learner-centered design.
     </p>
     <p>
-      I design structured, engaging learning experiences aligned with business
-      goals, learner needs, and accessibility standards.
+      I design structured, engaging learning experiences aligned with learner needs,
+      business goals, and accessibility best practices.
     </p>
   </div>
 </section>
@@ -100,20 +89,17 @@
 
     <div class="project-card">
       <h3>🧑‍💼 Workplace Communication</h3>
-      <p class="tag">Corporate eLearning</p>
-      <p><strong>Outcome:</strong> Improved professional communication skills.</p>
+      <p>Corporate eLearning module improving professional communication skills.</p>
     </div>
 
     <div class="project-card">
       <h3>🔐 Data Privacy Training</h3>
-      <p class="tag">Compliance Module</p>
-      <p><strong>Outcome:</strong> Increased awareness & compliance readiness.</p>
+      <p>Compliance-focused eLearning for non-technical employees.</p>
     </div>
 
     <div class="project-card">
       <h3>📖 Study Skills for Online Learners</h3>
-      <p class="tag">Education Design</p>
-      <p><strong>Outcome:</strong> Better learner confidence & time management.</p>
+      <p>Lesson design supporting learner confidence and self-management.</p>
     </div>
   </div>
 </section>
@@ -123,7 +109,7 @@
   <div class="container">
     <h2>🤝 Let’s Connect</h2>
 
-    <div class="contact-cards">
+    <div class="contact-grid">
       <a href="mailto:Ashisht3297@gmail.com" class="contact-card">
         ✉️ Email
       </a>
@@ -147,12 +133,22 @@
 </footer>
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/918447171581"
-   class="whatsapp"
-   target="_blank"
-   aria-label="Connect on WhatsApp">
+<a
+  href="https://wa.me/918447171581"
+  class="whatsapp"
+  target="_blank"
+  aria-label="Chat on WhatsApp"
+>
   💬
 </a>
+
+<!-- Dark Mode Script -->
+<script>
+  const toggle = document.getElementById("darkModeToggle");
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+</script>
 
 </body>
 </html>
