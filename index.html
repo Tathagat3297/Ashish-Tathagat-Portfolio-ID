@@ -1,148 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashish Tathagat | Instructional Designer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="nav">
-  <div class="nav-container">
-    <span class="logo">Ashish Tathagat</span>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-      <button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
-    </nav>
+<!-- Animated Background -->
+<div class="bg-animation">
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <h1>Ashish Tathagat</h1>
+  <p>Instructional Designer | Learning Experience Designer</p>
+
+  <div class="cta-buttons">
+    <a href="#portfolio" class="btn primary">View Portfolio</a>
+    <a href="resume.pdf" download class="btn secondary">Download Resume</a>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Instructional Designer</h1>
-  <p>
-    Designing learner-centered, engaging, and effective learning experiences
-    grounded in instructional design principles.
-  </p>
-
-  <!-- DECK STYLE CTA -->
-  <div class="hero-deck">
-    <a href="#portfolio" class="deck-card">
-      📂
-      <span>View Portfolio</span>
-    </a>
-
-    <a href="resume.pdf" download class="deck-card">
-      📄
-      <span>Download Resume</span>
-    </a>
-
-    <a href="mailto:Ashisht3297@gmail.com" class="deck-card">
-      ✉️
-      <span>Email Me</span>
-    </a>
-  </div>
-</section>
-
-<!-- ABOUT -->
+<!-- About -->
 <section class="section" id="about">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>
-      I am an instructional designer with a strong foundation in learning theory,
-      instructional design models, and learner-centered design. I specialize in creating
-      clear, engaging, and effective learning experiences that help learners achieve
-      measurable outcomes.
-    </p>
-    <p>
-      My approach combines structured instructional design with practical problem-solving.
-      I enjoy analyzing learning needs, designing meaningful learning activities, and
-      developing content that is accessible, well-organized, and aligned with learning objectives.
-    </p>
-    <p>
-      I am particularly interested in designing online learning, corporate training,
-      and educational content that is intuitive, inclusive, and results-driven.
-    </p>
-  </div>
+  <h2>About Me</h2>
+  <p>
+    I am an instructional designer with a strong foundation in learning theory,
+    instructional design models, and learner-centered design. I specialize in creating
+    clear, engaging, and effective learning experiences that support measurable outcomes.
+  </p>
+  <p>
+    My approach blends structured instructional frameworks with real-world problem-solving,
+    focusing on clarity, accessibility, and learner engagement.
+  </p>
 </section>
 
-<!-- SKILLS -->
+<!-- Skills -->
 <section class="section light" id="skills">
-  <div class="container">
-    <h2>Core Skills</h2>
+  <h2>Core Skills</h2>
+  <ul class="skills">
+    <li>Instructional Design (ADDIE, SAM, Bloom’s Taxonomy)</li>
+    <li>Learning Needs Analysis</li>
+    <li>Learning Objectives & Assessments</li>
+    <li>Storyboarding & Content Structuring</li>
+    <li>eLearning & Blended Learning Design</li>
+    <li>Adult Learning Principles</li>
+    <li>Accessibility & Inclusive Design</li>
+  </ul>
+</section>
 
-    <ul class="skills-list">
-      <li>Instructional Design (ADDIE, SAM, Bloom’s Taxonomy)</li>
-      <li>Learning Needs Analysis</li>
-      <li>Learning Objectives & Assessment Design</li>
-      <li>Storyboarding & Content Structuring</li>
-      <li>eLearning Design (Self-paced & Blended)</li>
-      <li>Adult Learning Principles</li>
-      <li>Accessibility & Inclusive Design</li>
-      <li>Content Writing & Editing</li>
-    </ul>
+<!-- Tools -->
+<section class="section" id="tools">
+  <h2>Tools & Technologies</h2>
+  <div class="tools">
+    <span>Articulate Storyline 360</span>
+    <span>Articulate Rise 360</span>
+    <span>Adobe Captivate</span>
+    <span>Vyond</span>
+    <span>Synthesia</span>
+    <span>LMS</span>
+    <span>SCORM</span>
   </div>
 </section>
 
-<!-- PORTFOLIO -->
-<section class="section" id="portfolio">
-  <div class="container">
-    <h2>Portfolio Projects</h2>
+<!-- Portfolio -->
+<section class="section light" id="portfolio">
+  <h2>Portfolio Projects</h2>
 
-    <div class="project-card">
-      <h3>Workplace Communication Basics</h3>
-      <p><strong>Client:</strong> Midland Credit Management</p>
-      <p><strong>Outcome:</strong> Improved professional communication skills.</p>
-    </div>
+  <div class="card">
+    <h3>Workplace Communication Basics</h3>
+    <p><strong>Audience:</strong> Entry-level professionals</p>
+    <p>
+      Designed a self-paced eLearning course focusing on email etiquette,
+      active listening, and constructive feedback.
+    </p>
+  </div>
 
-    <div class="project-card">
-      <h3>Introduction to Data Privacy</h3>
-      <p><strong>Client:</strong> NIIT Limited</p>
-      <p><strong>Outcome:</strong> Increased compliance awareness.</p>
-    </div>
+  <div class="card">
+    <h3>Introduction to Data Privacy</h3>
+    <p><strong>Audience:</strong> Non-technical employees</p>
+    <p>
+      Developed a scenario-based compliance module explaining
+      data privacy concepts in clear, simple language.
+    </p>
+  </div>
 
-    <div class="project-card">
-      <h3>Study Skills for Online Learners</h3>
-      <p><strong>Type:</strong> Educational Lesson Design</p>
-      <p><strong>Outcome:</strong> Improved learner confidence.</p>
-    </div>
+  <div class="card">
+    <h3>Study Skills for Online Learners</h3>
+    <p><strong>Audience:</strong> Online students</p>
+    <p>
+      Created a lesson design to support time management,
+      self-regulation, and learner motivation.
+    </p>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="section light" id="contact">
-  <div class="container">
-    <h2>Contact</h2>
-
-    <div class="contact-deck">
-      <a href="mailto:Ashisht3297@gmail.com" class="contact-card">✉️ Email</a>
-      <a href="tel:+918447171581" class="contact-card">📞 Call</a>
-      <a href="https://linkedin.com/in/ashish-tathagat-9bb78226a" target="_blank" class="contact-card">💼 LinkedIn</a>
-    </div>
+<!-- Process -->
+<section class="section" id="process">
+  <h2>Design Process</h2>
+  <div class="process">
+    <div>Analyze</div>
+    <div>Design</div>
+    <div>Develop</div>
+    <div>Implement</div>
+    <div>Evaluate</div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- Footer -->
 <footer class="footer">
   <p>© 2026 Ashish Tathagat | Instructional Designer</p>
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/918447171581" class="whatsapp" target="_blank" aria-label="WhatsApp">
-  💬
-</a>
-
-<!-- DARK MODE SCRIPT (WORKING) -->
-<script>
-  document.getElementById("darkToggle").addEventListener("click", function () {
-    document.body.classList.toggle("dark");
-  });
-</script>
+<!-- Floating Contact Icons -->
+<div class="contact-float">
+  <a href="https://wa.me/918447171581" target="_blank" title="WhatsApp">💬</a>
+  <a href="tel:+918447171581" title="Call">📞</a>
+  <a href="mailto:ashisht3297@gmail.com" title="Email">✉️</a>
+</div>
 
 </body>
 </html>
