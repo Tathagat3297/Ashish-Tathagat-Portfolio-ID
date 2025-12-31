@@ -8,25 +8,38 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1>Ashish Tathagat</h1>
-      <p class="subtitle">Instructional Designer | Learning Experience Designer</p>
-      <div class="contact-links">
-        <a href="mailto:Ashisht3297@gmail.com">Email</a>
-        <a href="https://linkedin.com/in/ashish-tathagat-9bb78226a" target="_blank">LinkedIn</a>
-        <a href="#">Portfolio</a>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <span class="logo">Ashish Tathagat</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Instructional Designer</h1>
+      <p>Designing learner-centered, engaging, and effective learning experiences.</p>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn-primary">View Portfolio</a>
+        <a href="mailto:Ashisht3297@gmail.com" class="btn-secondary">Contact Me</a>
       </div>
     </div>
   </header>
 
   <!-- About -->
-  <section class="section">
+  <section class="section" id="about">
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I am a  instructional designer with a strong foundation in learning theory,
+        I am an instructional designer with a strong foundation in learning theory,
         instructional design models, and learner-centered design. I specialize in creating
         clear, engaging, and effective learning experiences that help learners achieve
         measurable outcomes.
@@ -44,127 +57,121 @@
   </section>
 
   <!-- Skills -->
-  <section class="section section-light">
+  <section class="section light" id="skills">
     <div class="container">
       <h2>Core Skills</h2>
 
-      <ul class="skills-list">
-        <li>Instructional Design (ADDIE, SAM, Blooms Taxonomy)</li>
-        <li>Learning Needs Analysis</li>
-        <li>Learning Objectives & Assessment Design</li>
-        <li>Storyboarding & Content Structuring</li>
-        <li>eLearning Design (Self-paced & Blended)</li>
-        <li>Adult Learning Principles</li>
-        <li>Curriculum & Lesson Planning</li>
-        <li>Accessibility & Inclusive Design</li>
-        <li>Content Writing & Editing</li>
-      </ul>
+      <div class="skills-grid">
+        <ul>
+          <li>Instructional Design (ADDIE, SAM, Bloom’s Taxonomy)</li>
+          <li>Learning Needs Analysis</li>
+          <li>Learning Objectives & Assessment Design</li>
+          <li>Storyboarding & Content Structuring</li>
+          <li>eLearning Design (Self-paced & Blended)</li>
+        </ul>
+        <ul>
+          <li>Adult Learning Principles</li>
+          <li>Curriculum & Lesson Planning</li>
+          <li>Accessibility & Inclusive Design</li>
+          <li>Content Writing & Editing</li>
+        </ul>
+      </div>
 
       <h3>Tools</h3>
-      <ul class="tools-list">
-         <li>Articulate Storyline 360</li>
-         <li>Articulate Rise 360</li>
-        <li>Adobe Captivate</li>
-           <li>Synthesia</li>
-        <li>Vyond</li>
-         <li>Xyleme</li>
-        <li>Walkme</li>
-        <li>SCORM</li>
-        <li>Canva</li>
-        <li>Google Workspace / Microsoft Office</li>
-        <li>Learning Management Systems (LMS)</li>
-       
-      </ul>
+      <div class="tools">
+        <span>Articulate Storyline 360</span>
+        <span>Articulate Rise 360</span>
+        <span>Adobe Captivate</span>
+        <span>Synthesia</span>
+        <span>Vyond</span>
+        <span>Xyleme</span>
+        <span>WalkMe</span>
+        <span>SCORM</span>
+        <span>Canva</span>
+        <span>Google Workspace</span>
+        <span>Microsoft Office</span>
+        <span>LMS</span>
+      </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section class="section">
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
     <div class="container">
       <h2>Portfolio Projects</h2>
 
-      <div class="project">
-        <h3>Online Course: Workplace Communication Basics</h3>
-        <p class="meta">Midland Credit Management | Self-paced online course</p>
+      <div class="project-card">
+        <h3>Workplace Communication Basics</h3>
+        <p class="tag">Midland Credit Management · Self-paced Course</p>
 
-        <p><strong>Problem:</strong> New employees often struggle with professional communication.</p>
-        <p><strong>Solution:</strong> Designed a short online course covering email etiquette,
-          active listening, and constructive feedback.</p>
+        <p><strong>Problem:</strong> New employees struggle with professional communication.</p>
+        <p><strong>Solution:</strong> Designed an online course covering email etiquette, active listening, and feedback.</p>
 
-        <p><strong>My Role:</strong></p>
         <ul>
-          <li>Conducted learner and needs analysis</li>
-          <li>Defined learning objectives</li>
-          <li>Designed course structure and content</li>
-          <li>Created assessments and activities</li>
+          <li>Needs & learner analysis</li>
+          <li>Learning objectives & structure</li>
+          <li>Content development & assessments</li>
         </ul>
 
-        <p><strong>Outcome:</strong> A structured, beginner-friendly course focused on practical skill development.</p>
+        <p class="outcome"><strong>Outcome:</strong> Beginner-friendly course supporting real-world communication skills.</p>
       </div>
 
-      <div class="project">
-        <h3>Training Module: Introduction to Data Privacy</h3>
-        <p class="meta">NIIT Limited | eLearning module</p>
+      <div class="project-card">
+        <h3>Introduction to Data Privacy</h3>
+        <p class="tag">NIIT Limited · eLearning Module</p>
 
-        <p><strong>Problem:</strong> Employees lack awareness of basic data privacy principles.</p>
-        <p><strong>Solution:</strong> Designed a concise training module using real-world scenarios.</p>
+        <p><strong>Problem:</strong> Employees lacked awareness of data privacy principles.</p>
+        <p><strong>Solution:</strong> Designed scenario-based eLearning using plain language.</p>
 
-        <p><strong>My Role:</strong></p>
         <ul>
-          <li>Defined learning goals</li>
-          <li>Created storyboard and content flow</li>
-          <li>Designed scenario-based activities</li>
-          <li>Developed assessment questions</li>
+          <li>Learning goal alignment</li>
+          <li>Storyboarding & flow</li>
+          <li>Scenario-based assessments</li>
         </ul>
 
-        <p><strong>Outcome:</strong> A clear and accessible introduction to data privacy concepts.</p>
+        <p class="outcome"><strong>Outcome:</strong> Clear and accessible compliance training module.</p>
       </div>
 
-      <div class="project">
-        <h3>Lesson Design: Study Skills for Online Learners</h3>
-        <p class="meta">Educational lesson design</p>
+      <div class="project-card">
+        <h3>Study Skills for Online Learners</h3>
+        <p class="tag">Educational Lesson Design</p>
 
-        <p><strong>Problem:</strong> Online learners struggle with time management and study strategies.</p>
-        <p><strong>Solution:</strong> Designed a lesson focused on practical study skills.</p>
+        <p><strong>Problem:</strong> Learners struggled with time management.</p>
+        <p><strong>Solution:</strong> Designed a flexible lesson focused on study strategies.</p>
 
-        <p><strong>My Role:</strong></p>
         <ul>
           <li>Learner analysis</li>
-          <li>Lesson objectives and outcomes</li>
-          <li>Learning activities and reflections</li>
+          <li>Objectives & activities</li>
           <li>Formative assessments</li>
         </ul>
 
-        <p><strong>Outcome:</strong> A flexible lesson supporting learner confidence and success.</p>
+        <p class="outcome"><strong>Outcome:</strong> Lesson supporting learner confidence and success.</p>
       </div>
     </div>
   </section>
 
   <!-- Process -->
-  <section class="section section-light">
+  <section class="section light" id="process">
     <div class="container">
       <h2>Design Process</h2>
-      <ol class="process-list">
-        <li>Analyze – Learners, goals, constraints</li>
-        <li>Design – Objectives, structure, assessments</li>
-        <li>Develop – Instructional content</li>
-        <li>Implement – Delivery-ready materials</li>
-        <li>Evaluate – Continuous improvement</li>
-      </ol>
+      <div class="process-steps">
+        <div>Analyze</div>
+        <div>Design</div>
+        <div>Develop</div>
+        <div>Implement</div>
+        <div>Evaluate</div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 Ashish Tathagat | Instructional Designer</p>
-      <p>
-        <a href="mailto:Ashisht3297@gmail.com">yourname@email.com</a> ·
-        <a href="https://linkedin.com/in/ashish-tathagat-9bb78226a" target="_blank">LinkedIn</a>
-      </p>
-    </div>
+  <footer class="footer" id="contact">
+    <p>© 2026 Ashish Tathagat | Instructional Designer</p>
+    <p>
+      <a href="mailto:Ashisht3297@gmail.com">Ashisht3297@gmail.com</a> ·
+      <a href="https://linkedin.com/in/ashish-tathagat-9bb78226a" target="_blank">LinkedIn</a>
+    </p>
   </footer>
 
 </body>
 </html>
-
