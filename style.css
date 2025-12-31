@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
 }
 
-/* NAV */
+/* Navigation */
 .nav {
   background: #0f2a44;
   padding: 15px 0;
@@ -112,6 +112,11 @@ body {
   margin: auto;
 }
 
+h2 {
+  color: #0f2a44;
+  margin-bottom: 25px;
+}
+
 /* Skills */
 .skills-grid {
   display: grid;
@@ -151,7 +156,7 @@ body {
   text-align: center;
 }
 
-/* Contact */
+/* Contact Cards */
 .contact-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -179,17 +184,50 @@ body {
 }
 
 @keyframes pulse {
-  50% {transform: scale(1.08);}
+  50% { transform: scale(1.08); }
 }
 
-/* Footer */
+/* Footer Deck */
 .footer {
-  background: #0f2a44;
+  background: linear-gradient(135deg, #0f2a44, #1e4b7a);
   color: white;
+  padding: 70px 20px 40px;
   text-align: center;
-  padding: 35px;
 }
 
-.footer a {
+.footer-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.footer-deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.deck-card {
+  background: white;
+  color: #1f2933;
+  padding: 35px;
+  border-radius: 18px;
+  text-decoration: none;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  transition: transform 0.35s ease;
+}
+
+.deck-card:hover {
+  transform: translateY(-10px);
+}
+
+.deck-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  animation: pulse 2.5s infinite;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
   color: #cfe8ff;
 }
